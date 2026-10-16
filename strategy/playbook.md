@@ -9513,3 +9513,26 @@ not only Russia->Kyiv: while any evening/night hours of the local date remain, a
 report may shade the estimate at most 0.05 below the mid (or base rate, whichever is lower).
 A larger shade needs a positive fact (announced pause, ceasefire, confirmed calm-night report),
 not a failed search. Re-grade at the next settlement in this family.
+
+## 2026-10-16 19:05Z update: Trump TS Oct9-16 + Oct 15 crypto touch + Inch WSV (FULL, RETRO-20261016-1905)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| Announcers "Inch" SEA-DEN (`fbbba722cbb1`, WSV) | 0.80/0.505 | Yes | +0.170 (Yes @0.63, spread 0.25) | Yes | +2.93 |
+
+WSV forfeited $2.93. Totals: 81 rows, 71 trd, 38W/33L, CF -$49.29 (-52.22+2.93 ✓). No rule change.
+
+- **Touch above-side half-gap cap (tightening; n=21 above-side rows).** The DEEP-2026-10-01
+  side split has had the same sign on every update: above-mid by > 0.05 was +0.061 at n=18,
+  and the Oct 15 evening BTC $83k `84f11802eb8b` (0.41/0.305, +0.075) and XRP $1.35
+  `04a4b23c9dc7` (0.63/0.53, +0.116) both failed to touch. Rule: when raw touch.py exceeds
+  the mid by more than 0.05, record `est = mid + (raw - mid)/2`. Put the raw value and the
+  half-gap in the note as `raw=X half-gap`. Below-mid and within-0.05 rows are unchanged.
+  Touch stays forecast-only. Re-grade when the above side reaches n=30.
+- **Postcount small-n shrink: re-grade done (3/3 families), tightened to w = n/(n+20).**
+  Musk Oct8-10, Musk Oct10-12, Trump TS Oct9-16. In all three, the book beat the self-model on
+  the modal bracket. On Trump 160-179 `9d375d09f493` (0.42 vs 0.658, Yes, +0.219), the
+  n/(n+10) shrink was not applied at all: no `w=` in the note. Rule: an empirical window with
+  n < 15 days records `est = w*model + (1-w)*mid` with `w = n/(n+20)`. Guessed-weight
+  mixtures keep w = 0.25. The note MUST carry `raw=X w=Y`. A postcount row without it is a
+  recording error, and the retro that grades it says so.
