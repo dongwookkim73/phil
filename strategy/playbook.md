@@ -9536,3 +9536,30 @@ WSV forfeited $2.93. Totals: 81 rows, 71 trd, 38W/33L, CF -$49.29 (-52.22+2.93 �
   n < 15 days records `est = w*model + (1-w)*mid` with `w = n/(n+20)`. Guessed-weight
   mixtures keep w = 0.25. The note MUST carry `raw=X w=Y`. A postcount row without it is a
   recording error, and the retro that grades it says so.
+
+## 2026-10-17 02:12Z update: Trump Dalton GA rally + AAA gas Oct 16 (FULL, RETRO-20261017-0212)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| Trump GA "Tax" 25+ (`8fea7930d0c7`, WSV) | 0.65/0.785 | No | +0.090 (No @0.26, spread 0.09) | Yes | -5.00 |
+| Trump GA "Russia/Ukraine" (`bd77c5b0c70f`, OVV) | 0.45/0.615 | No | +0.150 (No @0.40) | Yes | -5.00 |
+
+Both vetoes saved $5. WSV totals: 82 rows, 72 trd, 38W/34L, CF -$54.29 (-49.29-5.00 ✓).
+
+- **Say-the-word small-n shrink (tightening; provisional, one rally).**
+  - GA rally: 10 k/n rows netted +0.361 dBrier. 8 of 11 words were said, and I sat below the mid
+    on 7 of those 8.
+  - Transcript-count below-side (No lean) tally: 7/12 at -0.068 → **7/15 at +0.097** (Tax, Ass,
+    Transgender all Yes). This is the first time it has been net positive.
+  - Market-series method, first graded rally: 7 rows, +0.196.
+  - Rule: for `method=transcript-count(k/n)` or `method=market-series(k/n)` with n < 10, record
+    `est = w*raw + (1-w)*mid` with `w = n/(n+20)`. The note carries `raw=X w=Y`.
+  - Exempt: venue-local named-landmark/figure rows, which already floor at the mid.
+  - The above-side 10-row trigger (DEEP-10-15) is unchanged and is read on raw values.
+  - Re-grade after 2 more rallies.
+  - Knife-edge Transgender 5+ has now lost its No lean 3 rallies running (AK, AZ, GA). Under this
+    shrink it would have sat ~0.63, at the mid.
+- **AAA daily gas bins (note only, n=1).** The print fell in my 2nd bin; driftless centring missed
+  the -0.004/day weekly drift. Write the w/w change in the note. When the last 7 days moved
+  monotonically, centre at `current + (w/w)/7`. The sd is still unsourced, so these rows stay
+  forecast-only.
