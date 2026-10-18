@@ -3040,6 +3040,14 @@ apart; with one read, the row is still `no-anchor`/veto territory. Also
 measured: RYD (returnyoutubedislikeapi) lagged the YouTube watch page by
 only ~19k views at 20:20Z Sep25, so a RYD read stamped with its fetch time
 counts as a dated read when YouTube 429s.
+Third instance (RETRO-20261018-0215, MrBeast plN7JMbadRg wk2): one RYD
+read (267.42M) plus a Tubefilter figure with no count time, used as if it
+were a second read. The pair at 0.55/0.43 against the book's 0.40/0.55
+lean lost +0.265. **A press figure with no count time is never a read.**
+For a `video-views` leg whose deadline is less than 24h out, without two
+same-source dated reads at least 3h apart, record est = mid with skip
+`no-anchor`. Do not shade toward my projection, and do not lean on the
+knife-edge cap. The book watches the live counter and I do not.
 
 **Pace must be diurnal-matched (RETRO-20261010-1815, MrBeast
 plN7JMbadRg wk1).** At 08:19Z Oct10 I projected the 02-08Z RYD pace
@@ -9563,3 +9571,17 @@ Both vetoes saved $5. WSV totals: 82 rows, 72 trd, 38W/34L, CF -$54.29 (-49.29-5
   the -0.004/day weekly drift. Write the w/w change in the note. When the last 7 days moved
   monotonically, centre at `current + (w/w)/7`. The sd is still unsourced, so these rows stay
   forecast-only.
+
+## 2026-10-18 02:15Z update: MrBeast plN7JMbadRg wk2 veto rows settled (FULL, RETRO-20261018-0215)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| MrBeast wk2 260-270M (`49088f4eb78f`, WSV) | 0.55/0.40 | Yes | +0.030 (Yes @0.52, below min_edge) | No | -5.00 |
+| MrBeast wk2 270-280M (`88fe313db37a`, WSV) | 0.43/0.55 | No | +0.070 (No @0.50, spread 0.10) | Yes | -5.00 |
+
+The veto saved $5 on 270-280M. Tool totals (`core/counterfactual.py ledger`): WSV 84 rows, 74
+fillable, 38W/36L, CF -$64.29, dBrier -0.0052. Veto stays.
+
+- **Final-day view-count: one dated read means est = mid (tightening).** See the third instance
+  under "Pace must be observed". Category `video-views` is n=15 forecasts at dBrier +0.060. Three
+  MrBeast families went to the book's lean at my final read.
