@@ -9585,3 +9585,12 @@ fillable, 38W/36L, CF -$64.29, dBrier -0.0052. Veto stays.
 - **Final-day view-count: one dated read means est = mid (tightening).** See the third instance
   under "Pace must be observed". Category `video-views` is n=15 forecasts at dBrier +0.060. Three
   MrBeast families went to the book's lean at my final read.
+
+## 2026-10-18 14:15Z update: 6 no-bet forecasts settled (FULL, RETRO-20261018-1415)
+
+All six beat the mid, small margins (live net dBrier -0.031). Bookkeeping only, no rule change:
+- **Revision direction datapoint.** Vancouver Sim: 0.30 (`a46917f58254`) revised toward the book
+  to 0.38 (`de0249319428`) on two tighter polls; Sim lost, the unrevised row scored better
+  (0.090 vs 0.144 Brier). Aggregate `revised-away` (n=314, +0.018) still favours revising; one
+  counter-case, logged for the next deep retro's revision-direction read.
+- **NFL "Offside(s)" announcer series** now 13Y/6N after Seahawks-Broncos (Laplace 14/21=0.67).
