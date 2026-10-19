@@ -9594,3 +9594,19 @@ All six beat the mid, small margins (live net dBrier -0.031). Bookkeeping only, 
   (0.090 vs 0.144 Brier). Aggregate `revised-away` (n=314, +0.018) still favours revising; one
   counter-case, logged for the next deep retro's revision-direction read.
 - **NFL "Offside(s)" announcer series** now 13Y/6N after Seahawks-Broncos (Laplace 14/21=0.67).
+
+## 2026-10-19 14:15Z update: China Q3 GDP + USGS + Inch rows settled (FULL, RETRO-20261019-1415)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| China Q3 GDP 4.3-4.6% (`2ae729db32f5`, OVV) | No 0.55/0.335 | No | +0.19 (No @0.36) | Yes | -5.00 |
+
+The veto saved $5.00. Net dBrier on the 5 rows was +0.039. The full breakdown is in the retro.
+
+- **All China NBS brackets (extends the CPI rule above; n=3, same sign).** CPI Aug, CPI Sep
+  and now GDP Q3 all leaned against the book on TE-derived arithmetic, and all three were wrong.
+  For any NBS bracket print (CPI, GDP, IP, retail), record `est = mid + 0.5*(model - mid)` at
+  most. TE or QoQ-chain arithmetic never supports a claimed edge on its own. NBS y/y prints sit
+  close to consensus and the prior quarter, so start from the prior print +/-0.2pp, not from a
+  chain.
+- **NFL "Inch(es)" announcer series** now 15Y/3N (Laplace 16/20=0.80).
