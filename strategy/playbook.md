@@ -4562,6 +4562,13 @@ would have COST here: <5M floored at 0.625 and 5-7M rescaled to ~0.32 at
 that the book is right: when the press centre is a studio Sat-AM figure
 already built on Friday actuals, note that in the row. Box-office forecasts
 n=42, sum dBrier +0.217, mean +0.0052. Still no-bet.
+Tally (RETRO-20261020-0215, evidence `c61b73062649`, `26354f06f8f0`):
+Street Fighter OW landed in the book's modal 30-33M bracket (mid 0.82, then
+0.961). Both of my rows sat BELOW the floor (0.70 vs 0.72; 0.82 vs 0.861),
+and the second used sd 1.2M after Friday actuals. That is a compliance
+miss: the floor would have cut the pair from +0.089 to ~+0.037. Floor
+record: helped 3, hurt 1. Apply the floor arithmetic BEFORE writing the
+note, and write `floor=<mid-0.10>` in the row.
 
 **2026-09-22 ~18:15Z update (FULL cycle, cloud; resolve.py settled 14
 forecasts, 2 `outside-view-veto`).** Both rows are the Trump x Greenland
