@@ -9617,3 +9617,15 @@ The veto saved $5.00. Net dBrier on the 5 rows was +0.039. The full breakdown is
   close to consensus and the prior quarter, so start from the prior print +/-0.2pp, not from a
   chain.
 - **NFL "Inch(es)" announcer series** now 15Y/3N (Laplace 16/20=0.80).
+
+## 2026-10-21 02:10Z update: AAA Oct20 bins + Netflix/GM/UAL rows (FULL, RETRO-20261021-0210)
+
+- **AAA daily gas bins: sd floor (tightening, n=2 for the drift-centre rule, 1 hit / 1 miss).**
+  The Oct20 print was 4.2786, d/d -0.0167, against a drift-centre of 4.2893 at sd ~0.004. That
+  put it 2.7 sd out. The direction was right, but the size was 1.7x the w/w daily pace. Use
+  sd >= 0.010 (the last-3-day d/d range was 0.013). In practice no single 0.01 bin goes above
+  ~0.40. The rows stay forecast-only.
+- **say-the-word `method=judgment` above the mid: 0/1 settled** (Netflix TikTok/YouTube 0.80 vs
+  0.72, neither word said, +0.122). Meta "Facebook" 10+ 0.75 is still open. Until there are k/n
+  data, a judgment row sits at most halfway from the mid to the raw read, and the note carries
+  `raw=X`.
