@@ -9629,3 +9629,28 @@ The veto saved $5.00. Net dBrier on the 5 rows was +0.039. The full breakdown is
   0.72, neither word said, +0.122). Meta "Facebook" 10+ 0.75 is still open. Until there are k/n
   data, a judgment row sits at most halfway from the mid to the raw read, and the note carries
   `raw=X`.
+
+## 2026-10-22 02:10Z update: Meta Q3 headcount ladder + Meta call rows (FULL, RETRO-20261022-0210)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| Meta Q3 headcount >68k (`b8a682dccbdf`, OVV) | 0.40/0.675 | No | +0.270 (No @0.33) | No | +10.15 |
+| Meta Q3 headcount >70k (`b6b2af336fd4`, OVV) | 0.13/0.325 | No | +0.180 (No @0.69) | No | +2.25 |
+| Meta Q3 headcount >72k (`c7320a55cb94`, OVV) | 0.06/0.255 | No | +0.170 (No @0.77) | No | +1.49 |
+| Meta Q3 headcount >74k (`e356a391e748`, OVV) | 0.03/0.205 | No | +0.160 (No @0.81) | No | +1.17 |
+
+The veto cost +$15.06 at $5 flat (one correlated event; about +$12.40 under the $10 family cap).
+OVV totals (`core/counterfactual.py ledger`): 266 rows, 258 fillable, 108W/150L, CF +$152.56,
+dBrier +0.0269. The veto stays: the dBrier of the vetoed slice is still positive.
+
+- **Issuer-guided count (pre-registration, n=1 event).** The shape: the issuer has stated in
+  writing a change to a count it will itself publish ("majority of ~8,000 impacted no longer
+  reflected by end of Q3"), and the ladder prices the count as if the statement were not there.
+  My arithmetic took the statement literally and landed in the right 2k bin. This is not yet a
+  carve-out to the fact-finality gate. If a SECOND issuer-guided-count family settles with the
+  OVV side winning on net, the next deep retro writes the carve-out with these conditions:
+  (1) quoted issuer statement in the note, (2) the count is the issuer's own published figure,
+  (3) only the leg nearest the centre, (4) family cap $10. If the second family loses, the shape
+  goes back to plain OVV.
+- **say-the-word `method=judgment` above the mid: 0/2** (Meta "Nebius"/"Hyperion" 0.30 vs 0.19,
+  not said, +0.054). The halfway-to-mid rule above stands.
