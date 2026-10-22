@@ -9654,3 +9654,22 @@ dBrier +0.0269. The veto stays: the dBrier of the vetoed slice is still positive
   goes back to plain OVV.
 - **say-the-word `method=judgment` above the mid: 0/2** (Meta "Nebius"/"Hyperion" 0.30 vs 0.19,
   not said, +0.054). The halfway-to-mid rule above stands.
+
+## 2026-10-22 14:10Z update: Spotify Q3 MAU ladder (FULL, RETRO-20261022-1410)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| Spotify Q3 MAU >800M (`928696752d3f`, OVV) | 0.07/0.26 | No | +0.170 (No @0.76) | No | +1.58 |
+
+Printed 788M, exactly on guide. All 3 ladder rows beat the mid (>780 0.92, >790 0.35,
+>800 0.07; family dBrier -0.282). OVV totals (`core/counterfactual.py ledger`): 267 rows,
+259 fillable, 109W/150L, CF +$154.14, dBrier +0.0265. The veto stays.
+
+- **Guide-anchored issuer KPI ladder (new shape, n=1 event, 3/3 rows beat mid).** Use it for
+  company KPIs that come with a written forward guide (MAU, subs, deliveries). Centre on the
+  issuer's guide, not on consensus. Set spread from the company's own print-vs-guide history,
+  and lean toward the current year's direction. This is separate from the Meta issuer-guided-count
+  pre-registration above and does not count toward its n=2: a routine guide is not a stated,
+  already-decided change. Pre-registered test: if the next 2 guide-anchored families also beat
+  the mid on net, a deep retro may consider letting the leg nearest the guide through the OVV gate
+  under the family cap. If either loses on net, the shape stays forecast-only.
