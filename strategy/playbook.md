@@ -7950,6 +7950,14 @@ resolved No.
   qualitative "others see the next meeting" read does not.** Fading the
   far tail stays allowed when a numeric poll has no camp there.
   The operator runner graded the same settlement in RETRO-20261007-0917.
+  Third ladder, CBR Oct 23 (RETRO-20261023-1410): hold (modal) recorded
+  0.79 vs mid 0.87 AFTER this rule, on one analyst's 60/25/15 split; hold
+  won, +0.0272, cut leg also behind (+0.0034). **Tightened (3 of 3): a
+  "numeric survey" is a multi-respondent poll with a published count
+  (Reuters/Bloomberg/Interfax-type, n >= 5). One analyst's probability
+  split, a bank house call, or a "consensus expects" sentence does not
+  qualify. Without one, record the modal leg at the mid and keep its
+  siblings' sum <= 1 - mid.**
 - **USGS daily-max ladder, in-progress Poisson: first settled event
   (RETRO-20261001-2015).** Sep 30 ladder (c7cceb5a2381, 603ce1291e65,
   e879bdcdfa8c, 1150efff6222): observed max 5.6 with 3.7h left, 365d
