@@ -9673,3 +9673,17 @@ Printed 788M, exactly on guide. All 3 ladder rows beat the mid (>780 0.92, >790 
   already-decided change. Pre-registered test: if the next 2 guide-anchored families also beat
   the mid on net, a deep retro may consider letting the leg nearest the guide through the OVV gate
   under the family cap. If either loses on net, the shape stays forecast-only.
+
+## 2026-10-23 02:10Z update: GTA VI trailer ladder + Oct21 quake max (FULL, RETRO-20261023-0210)
+
+- **Tentpole-trailer week-1 multiplier (datapoint, n=1).** GTA VI Launch Trailer: 13.8M at ~8h,
+  final week 1 in 60-80M, so the 8h -> week-1 multiplier was >= 4.3x. The "2x by 24h, 2x over
+  the week" heuristic projected ~50M and put the first row in the wrong bin. For a tentpole
+  trailer, do not centre a ladder on an 8h read times 4; with only one early read, treat the
+  centre as unknown and keep est at the mid (the video-views rule already says so).
+- **Shading counter-case.** `149061f8eb9e` raw 0.40 shaded to 0.50 toward a 0.575 book; the raw
+  read would have scored better. One counter-case; video-views stays at dBrier +0.053 (n=17),
+  so the near-mid rule stands.
+- **Placeholder-mid dBrier.** The earthquake-max WSV row (0.93 vs 0.51 placeholder mid on a $4
+  book) scored -0.235. A placeholder mid inflates dBrier; do not count such rows as category
+  skill. The fill model refused the CF trade (ask 0.989), so the veto cost nothing.
