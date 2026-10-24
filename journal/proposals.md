@@ -4273,3 +4273,26 @@ There are no new hourly proposals since DEEP-10-10.
   e.g. at least 20 slots, for tag-targeted queries (`econ-tag`,
   `mentions-tag`). Do not act until that count is in.
 - No new hourly proposals were filed in this window.
+
+## 2026-10-24 14:1xZ - forecast.py --supersede links the OLDEST live row when two are live (operator machine, FULL cycle)
+
+- **Symptom.** Market 601826 (Flavio wins Brazil presidency) had TWO live
+  open Yes rows: 2e36afdbffed (10-02, 0.56) and 036467f8de2c (10-05, 0.79).
+  Both carry `supersedes: c67d8b6559ef`; c67d's `superseded_by` names only
+  036467f8de2c, so 2e36 was left live. Today's
+  `record --supersede` (b8e43f0bd2ef, 0.78) linked `live[0]`, the oldest
+  (2e36afdbffed, 0.56), and left 036467f8de2c (0.79) live and unlinked.
+  Headline scoring now counts two live rows on one market+outcome. The one-live-row rule
+  says that should not be possible.
+- **Cause (core/forecast.py ~L93-104).** `old = live[0]` takes the first
+  match in file order. The guard at L96 rejects a non-supersede record when
+  a live row exists, but nothing stops one supersede from leaving a second
+  live row behind. How 2e36 and 036467 both came to supersede c67d is not
+  visible from the rows.
+- **Ask.** (a) In `--supersede`, link EVERY live row on the market+outcome,
+  or at least the newest one, not `live[0]`. (b) Have `validate.py` flag
+  any market+outcome with more than one open, unsuperseded forecast row.
+  (c) Operator-side repair: mark 036467f8de2c `superseded_by: b8e43f0bd2ef`.
+  The agent cannot edit forecasts.jsonl.
+- **Impact.** Small on this market (0.79 vs 0.78, both in headline). The
+  silent double-count is the bug class to fix.
