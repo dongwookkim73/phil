@@ -9695,3 +9695,18 @@ Printed 788M, exactly on guide. All 3 ladder rows beat the mid (>780 0.92, >790 
 - **Placeholder-mid dBrier.** The earthquake-max WSV row (0.93 vs 0.51 placeholder mid on a $4
   book) scored -0.235. A placeholder mid inflates dBrier; do not count such rows as category
   skill. The fill model refused the CF trade (ask 0.989), so the veto cost nothing.
+
+## 2026-10-24 02:10Z update: UMich Oct final + Fort Myers rally words (FULL, RETRO-20261024-0210)
+
+- **say-the-word `method=judgment` ABOVE the mid: 0/3. Cap at mid + 0.05.** Netflix
+  TikTok/YouTube +0.122, Meta Nebius/Hyperion +0.054, and Trump Fort Myers
+  "Fentanyl/Deport" (`ab812f58cfaa`, raw 0.60 -> 0.42 vs 0.245, not said) +0.116. Halfway-to-mid
+  shading left every one of them worse than the mid. From now on an above-mid judgment row is
+  recorded at no more than mid + 0.05 until the note carries `transcript-count(k/n)` or
+  `market-series(k/n)`. Below-mid judgment reads keep the halfway rule ("SI" `a6416f5d9fde`
+  0.47 vs 0.57 won, -0.104; n=1). If an above-mid row loses at the cap, the next deep retro
+  moves it to the mid.
+- **UMich prelim -> final revision model (datapoint, 2 events / 3 rows, all ahead of the
+  mid).** Centre on the prelim, mean revision 0, sd ~1.45. Oct: prelim 46.3, so 46.0-48.9 at
+  0.57 vs 0.475 won and 43.0-45.9 at 0.39 vs 0.405 lost (family dBrier -0.103). The WSV cost
+  +$5.41 CF on a 0.29-spread book. That is not a max_spread case. The model stays forecast-only.
