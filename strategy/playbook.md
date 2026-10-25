@@ -9710,3 +9710,16 @@ Printed 788M, exactly on guide. All 3 ladder rows beat the mid (>780 0.92, >790 
   mid).** Centre on the prelim, mean revision 0, sd ~1.45. Oct: prelim 46.3, so 46.0-48.9 at
   0.57 vs 0.475 won and 43.0-45.9 at 0.39 vs 0.405 lost (family dBrier -0.103). The WSV cost
   +$5.41 CF on a 0.29-spread book. That is not a max_spread case. The model stays forecast-only.
+
+## 2026-10-25 02:10Z update: AAA Oct24 bin + Oct23 quake max (FULL, RETRO-20261025-0210)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| AAA Oct24 $4.2900-4.2999 (`45723ae90dbf`, OVV) | 0.55/0.93 | No | +0.36 (No @0.09) | Yes | -5.00 |
+
+- **AAA daily gas bins: a concentrated pre-print book means est = mid (n=3 events).** The
+  Oct24 book held 0.91/0.95 on one 1c bin about 12h before the print. The sd-floor model
+  (0.010, from RETRO-20261021-0210) said 0.40; I shaded to 0.55, the print landed in the bin,
+  and the row scored +0.198. The book reads a faster station feed than AAA's daily page. Rule:
+  if one bin's mid is >= 0.80 before AAA publishes, record that bin and its neighbours at the
+  mid. Use the sd-floor model only when no single bin holds >= 0.50. The veto saved $5.
