@@ -1576,6 +1576,10 @@ all Yes, family dBrier +0.596. The 13 mid rows were flat. Later-than-market
 reads are now 12/12 against me.
 Mid-anchored control rows (RETRO-20261015-0625): Fable 5.2+ Oct 14
 `a301f1e0348d` 0.265/0.26 settled No, dBrier +0.003 -- flat, as the rule predicts.
+**"est = mid" means the recorded mid exactly (RETRO-20261025-1410).** Fable 5.2+
+Oct 24 `38dcb2fd284a` cited this rule but recorded 0.62 against a mid of 0.585, with no
+primary source. It settled No at +0.042. A by-date rung with no release decays toward
+No, so rounding up is a one-way error. Copy the mid to 3 decimals.
 
 **Treasury touch drift rule (RETRO-20260928-2215).** For a Treasury
 par-yield touch rung ("hit X% in <month>") with 5 or fewer prints left,
@@ -8776,6 +8780,12 @@ Rule: when the book sits inside the published seat-model range, the row
 is no-edge (unchanged), AND the recorded est_prob is the track-record-best
 model's figure (or the mean of the two best), never a blend that pulls in
 the outlier models. Re-check after the next seat-model election settles.
+Stale-model clause (RETRO-20261025-1410, n=3 with BC): when the book sits BELOW
+a single seat model whose vote inputs lag the latest poll average, do not shade
+toward the model. Record the poll-error read. BC NDP most seats `0c4e89d2cdd4`:
+338Canada 40% on 42-44 vote inputs against a poll mean of CON +3.9; the raw read was
+0.20, I shaded to 0.25, the book was 0.125, and the result was No (+0.047; the raw
+read would have scored +0.028).
 
 Scope (RETRO-20261006-1230): this applies to province/seat-total rows.
 On RIDING-level rows, a single riding projection is noisier and the book
@@ -9723,3 +9733,18 @@ Printed 788M, exactly on guide. All 3 ladder rows beat the mid (>780 0.92, >790 
   and the row scored +0.198. The book reads a faster station feed than AAA's daily page. Rule:
   if one bin's mid is >= 0.80 before AAA publishes, record that bin and its neighbours at the
   mid. Use the sd-floor model only when no single bin holds >= 0.50. The veto saved $5.
+
+## 2026-10-25 14:10Z update: Fable 5.2+ Oct 24 rung + BC election (FULL, RETRO-20261025-1410)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| BC NDP most seats (`0c4e89d2cdd4`, OVV) | 0.25/0.125 | Yes | +0.11 (Yes @0.14) | No | -5.00 |
+
+OVV totals (`core/counterfactual.py ledger`): 270 rows, 262 fillable, 109W/153L,
+CF +$139.14, dBrier +0.0276. The veto stays.
+
+- **Seat models:** the stale-model clause is added to the seat-model rule above.
+- **AI release rungs:** "est = mid" now means the exact mid (see the anchoring rule).
+  The unexplained-move hold `84ad37e66d6f` (0.85 vs 0.91, No) beat the mid by 0.106.
+  It is the first later-than-market read to win, and the count is now 1/13. That is not
+  enough to reopen shading.
