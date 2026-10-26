@@ -8556,6 +8556,14 @@ read. The 90-day legs stay forecast-only (`unvalidated-method`).
   **Runoff rows apply the right-ward correction at FULL weight
   (centre ~6pt on margin, the 6-9pt spread folded into sd). Still
   `unvalidated-method`, forecast-only.**
+  **SUPERSEDED RETRO-20261026-1410: the runoff missed 5.3pt the OTHER
+  way** (finals F+1.8, result L+3.5). The sign flipped between two rounds
+  of one election, so the n=3 "direction" was noise. **Directional
+  poll-bias priors are retired for all elections. Centre on the final
+  poll average, and put the historical final-poll error in the sd only
+  (sign-agnostic).** A directional shift needs >=5 elections across >=2
+  countries with the same sign, measured on the same round type, before
+  it may move a centre.
 - **USGS weekly count (dc9200183ac0, 2026-10-04 12:17Z, '7' leg 0.48 at
   "count 7"): count not reproducible.** A USGS query at the deep retro
   (Sep 28 04:00Z to Oct 5 04:00Z, M>=5.5) lists 6 events: MAR 5.5,
@@ -9756,3 +9764,26 @@ CF +$139.14, dBrier +0.0276. The veto stays.
   forecast-only. On Oct25 the model said 0.47-0.59 and the book said 0.665. I recorded
   0.60, the print missed the bin, and the row scored -0.082 vs the mid. Books >= 0.80 still
   get est = mid. Revisit once this band has 5 rows. AAA events so far: n=4.
+
+## 2026-10-26 14:10Z update: Brazil runoff family + Elon crypto (FULL, RETRO-20261026-1410)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| Lula wins, Sep21 (`9c5be5868fda`, OVV) | 0.47/0.385 | Yes | +0.08 (Yes @0.39) | Yes | +7.82 |
+| Flavio wins, Sep21 (`c67d8b6559ef`, OVV) | 0.44/0.611 | No | +0.17 (No @0.392) | No | +7.76 |
+
+OVV totals (`core/counterfactual.py ledger`): 272 rows, 264 fillable, 111W/153L,
+CF +$154.71, dBrier +0.0264. politics-general OVV is 38 rows / 26 events, CF +$84.35,
+dBrier -0.0126. It is the one large category where vetoed reads beat the mid, but this
+correlated Brazil pair dominates it. The veto stays; the next deep retro reviews it by event.
+
+- **Election poll-bias direction: retired** (see the Brazil complementary-legs rule above).
+  R1 missed ~6.9pt right, R2 missed 5.3pt left. Live family rows net +0.104 vs the mid; the
+  abroad pair alone accounts for +0.256. **A single analogue election (2022 abroad R1->R2
+  narrowing) is not a method.** It stays `unvalidated-method` and must not move an estimate
+  more than 0.10 off the mid.
+- **First-contact recall prior: cap at mid +-0.15 or skip as `no-benchmark`.** Musk
+  "Bitcoin/Crypto" Oct19-25 `0d40f86d1027` recorded 0.60 against a seeded $77 book at
+  0.03/0.07, on "he mentions crypto most weeks" with no resolved series. It settled No,
+  +0.358 dBrier, the worst forecast row this month. A thin book is still evidence. Recall
+  with no series is not.
