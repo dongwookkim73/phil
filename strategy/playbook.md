@@ -9748,3 +9748,11 @@ CF +$139.14, dBrier +0.0276. The veto stays.
   The unexplained-move hold `84ad37e66d6f` (0.85 vs 0.91, No) beat the mid by 0.106.
   It is the first later-than-market read to win, and the count is now 1/13. That is not
   enough to reopen shading.
+
+## 2026-10-26 02:10Z update: AAA Oct25 bin (FULL, RETRO-20261026-0210)
+
+- **AAA daily gas bins, 0.50-0.80 band (n=1, provisional).** If the top pre-print bin's mid
+  is between 0.50 and 0.80, record the midpoint of the sd-floor model and the mid,
+  forecast-only. On Oct25 the model said 0.47-0.59 and the book said 0.665. I recorded
+  0.60, the print missed the bin, and the row scored -0.082 vs the mid. Books >= 0.80 still
+  get est = mid. Revisit once this band has 5 rows. AAA events so far: n=4.
