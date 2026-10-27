@@ -9226,6 +9226,13 @@ fillable price. Recording rule stands; category bar stands.
   whose outcome is the same on both sides of the edge is not capped
   (house 163+ ccc9f72c326e at 0.25 was right). n=1: a confidence cap, not
   a bet gate.
+- n=2 (RETRO-20261027-1410): Quebec PQ 55-59 44897276e469. It was
+  recorded on count night at 0.70 with "PQ 59, top edge, flip risk both
+  ways", against a thin 0.77/0.95 book (mid 0.86), and the PQ finished
+  at 60 (dBrier -0.250). The row predates this rule. A 0.60 cap would
+  have scored Brier 0.36, against 0.49 recorded and 0.74 for the mid.
+  The cap is symmetric: it applies when the book is MORE confident than
+  me, not only when I am more confident than the book.
 
 ## 2026-10-12 18:15Z update: Musk Oct10-12 settled (FULL, RETRO-20261012-1815)
 
