@@ -9787,3 +9787,24 @@ correlated Brazil pair dominates it. The veto stays; the next deep retro reviews
   0.03/0.07, on "he mentions crypto most weeks" with no resolved series. It settled No,
   +0.358 dBrier, the worst forecast row this month. A thin book is still evidence. Recall
   with no series is not.
+
+## 2026-10-27 02:10Z update: Ballon d'Or pair + AAA Oct26 (FULL, RETRO-20261027-0210)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| Putellas Women's Ballon d'Or (`b05cc9d0001c`, OVV) | 0.80/0.9305 | No | +0.13 (No @~0.07) | Yes | -5.00 |
+| Kane Ballon d'Or (`dde067557ffe`, OVV) | 0.62/0.7645 | No | +0.14 (No @~0.236) | Yes | -5.00 |
+
+OVV totals (`core/counterfactual.py ledger`): 274 rows, 266 fillable, 111W/155L,
+CF +$144.71, dBrier +0.0266. Awards slice: 13 rows, CF -$7.98. The veto stays and saved $10 here.
+
+- **Jury awards after voting closes: liquid favourite -> est within mid +-0.07** unless a
+  dated source (a verified tally, or a verified denial of a leak) supports more. Both rows
+  discounted the favourite on one analogue (Vinicius 2024 at ~0.9 lost). Both favourites
+  won, and the pair scored +0.124 vs the mid. One analogue is not a method; see the Brazil
+  ruling. Provisional, n=2; revisit at 5 rows.
+- **Sealed-decision observation (Kuleba Nobel, 2026-10-09):** Kane is the first case
+  where holding the prior against an unsourced leak move was wrong. The tally is now 1-1.
+  It stays an observation, not a rule.
+- **AAA >= 0.80 band:** Oct26 est = mid (scan 0.815 vs live 0.825) and the bin printed,
+  +0.004. 2 rows, both followed the rule. AAA events: n=5.
