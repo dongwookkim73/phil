@@ -7962,6 +7962,15 @@ resolved No.
   split, a bank house call, or a "consensus expects" sentence does not
   qualify. Without one, record the modal leg at the mid and keep its
   siblings' sum <= 1 - mid.**
+  Fourth ladder, RBNZ Oct 28 (RETRO-20261028-1411): +25bp modal recorded
+  0.85 vs mid 0.815 and LOST to a 4-3 hold (+0.058). The first row (0.48,
+  10-14) weighted the Sep MPS track (pause Oct, hike Dec) and a Breman
+  pause hint; later revisions followed the house-call flips. **Amended
+  (4 ladders): the mid is a floor, not a target above it. Recording the
+  modal leg ABOVE the mid needs the same numeric-survey bar. If the
+  bank's own last published track or a dated governor remark points away
+  from the modal leg, record it at the mid even after the house calls
+  have flipped.**
 - **USGS daily-max ladder, in-progress Poisson: first settled event
   (RETRO-20261001-2015).** Sep 30 ladder (c7cceb5a2381, 603ce1291e65,
   e879bdcdfa8c, 1150efff6222): observed max 5.6 with 3.7h left, 365d
