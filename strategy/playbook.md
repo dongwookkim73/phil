@@ -9815,3 +9815,17 @@ CF +$144.71, dBrier +0.0266. Awards slice: 13 rows, CF -$7.98. The veto stays an
   It stays an observation, not a rule.
 - **AAA >= 0.80 band:** Oct26 est = mid (scan 0.815 vs live 0.825) and the bin printed,
   +0.004. 2 rows, both followed the rule. AAA events: n=5.
+
+## 2026-10-28 02:10Z update: Corpus Christi rally words + Robinhood (FULL, RETRO-20261028-0210)
+
+- **The say-the-word caps from RETRO-20261024-0210 held up: 4 rows, net -0.198 vs the mid,
+  all beat or tied it.** Above-mid at mid + 0.05: Fentanyl/Deport `7fde7fef3c5d` (0.24 vs
+  0.195, said) and Million 25+ `5765ff540494` (0.81 vs 0.765, cleared) both won, so above-mid
+  rows are 2/5 overall. The move-to-mid trigger did not fire and the cap stays. Below-mid
+  halfway: SI `5f269944bdb1` 0.41 vs 0.525, not said, makes it 2/2.
+- **Trump-rally phrase series (citable as `market-series(k/n)`):** "SI/Super Intelligence"
+  0/2 (Fort Myers, Corpus Christi; the book priced 0.525-0.57 both times). "Fentanyl/Deport"
+  1/2. The next rally's SI row may record below the halfway point when its note cites the
+  series, floored at mid - 0.15 (the first-contact cap). Grow the series every rally.
+- **Label honesty:** a judgment row whose ask-edge is >= min_edge is `unvalidated-method`,
+  never `no-edge`. The SI row carried `no-edge` at a No ask-edge of about 0.11.
