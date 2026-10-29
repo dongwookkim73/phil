@@ -9838,3 +9838,23 @@ CF +$144.71, dBrier +0.0266. Awards slice: 13 rows, CF -$7.98. The veto stays an
   series, floored at mid - 0.15 (the first-contact cap). Grow the series every rally.
 - **Label honesty:** a judgment row whose ask-edge is >= min_edge is `unvalidated-method`,
   never `no-edge`. The SI row carried `no-edge` at a No ask-edge of about 0.11.
+
+## 2026-10-29 14:10Z update: Tradeweb Q3 EPS pair (FULL, RETRO-20261029-1410)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| TW adj EPS > 1.04 (`7b9ea7d8cc91`, OVV) | 0.42/0.245 | Yes | +0.16 (Yes @0.26) | No | -5.00 |
+| TW adj EPS > 1.05 (`9a47b094d4f5`, OVV) | 0.38/0.21 | Yes | +0.12 (Yes @0.26) | No | -5.00 |
+
+OVV totals (`core/counterfactual.py ledger`): 276 rows, 268 fillable, 111W/157L,
+CF +$134.71, dBrier +0.0272. earnings-beat OVV: 4 rows, 0W/4L, CF -$20.00. The veto stays
+and saved $10 here.
+
+- **Earnings-beat judgment rows: est within mid +-0.10** unless the note quotes (a) the
+  diluted share count from the latest 10-Q and (b) the issuer's last-8-quarter beat count.
+  A row that has both stays `unvalidated-method` until 5 such rows have settled. Evidence:
+  the TW model was off by 4c on EPS. Revenue was ~$12.5M high because the fixed block was
+  carried over from Q2, and the share count was 214M where the print implies 234M. Both
+  errors pushed it toward a beat (actual $1.02). The GS row e8b241c3ee5e missed the other
+  way. earnings-beat forecasts n=6, brier_delta +0.0715. This tightens a claim of edge, so
+  it applies at small n.
