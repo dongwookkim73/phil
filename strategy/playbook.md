@@ -9869,3 +9869,25 @@ The veto saved $5 (and no gate would have taken a -0.33 edge anyway). WSV tool t
 (`core/counterfactual.py ledger --skip-reason wide-spread-veto`): 96 rows, 83 trd, 41W/42L,
 CF -$83.67, dBrier -0.0034. news WSV slice: 4 rows, 0W/4L, CF -$20.00. Settled 36 days after
 its end date (UMA lag). No rule change: n=1 in the daily-strike class.
+
+## 2026-10-30 14:1xZ update: Q3 GDP flash trio + SC SI row (FULL, RETRO-20261030-1410)
+
+Prints: DE 1.2 y/y (cons 1.1), EA 1.3 (cons 1.1), MX 3.2 (TE 2.5). All three were above
+consensus on the same day. 6 live rows net dBrier -0.115 vs mid. No veto rows settled.
+
+- **Y/y flash GDP bins: sd floor 0.25pp.** Applies unless the note cites a
+  consensus-miss series for that release (with source). Evidence: EA N(1.1, 0.15) put the
+  1.3 print ~1.3 sd out. A y/y flash also moves with revisions to earlier quarters, so a
+  q/q-style sd understates it. This only narrows edge claims, so it applies at n=1. It is
+  not the third event under the 2026-10-01 "tails too fat" pre-registration: the book's
+  modal bin (0.8-1.1 at 0.66) lost too.
+- **A qualitative central-bank phrase is not a nowcast.** Evidence: DE. The Bundesbank's
+  "probably stagnated" moved my q/q from ~0.2 to 0.0, and the centre from 1.2 to 1.0. The
+  print was q/q ~0.2, so the superseded row (-0.039) beat the live ones (+0.014 combined).
+  Rule: such a phrase moves the q/q nowcast at most halfway toward its literal reading. A
+  numeric nowcast (GDPNow-style, IOAE) can move it fully.
+- **MX: the monthly activity series beat the consensus.** IGAE Aug + IOAE Sep gave a centre
+  of 3.35 (print 3.2) against TE 2.5. Keep re-forecasting on IGAE/IOAE releases, as
+  709a2a078346 did.
+- **SI series now 0/3** (Fort Myers, Corpus Christi, Rock Hill SC f872100ff841 at 0.38 vs
+  0.43, not said).
