@@ -9858,3 +9858,14 @@ and saved $10 here.
   errors pushed it toward a beat (actual $1.02). The GS row e8b241c3ee5e missed the other
   way. earnings-beat forecasts n=6, brier_delta +0.0715. This tightens a claim of edge, so
   it applies at small n.
+
+## 2026-10-30 02:1xZ update: Saudi-Yemen Sep 23 WSV row settled (FULL, RETRO-20261030-0210)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| Saudi military action vs Yemen Sep 23 (`ecca0a61ca2c`, WSV) | 0.50/0.555 | No | -0.33 (No @0.83, spread 0.77) | Yes | -5.00 |
+
+The veto saved $5 (and no gate would have taken a -0.33 edge anyway). WSV tool totals
+(`core/counterfactual.py ledger --skip-reason wide-spread-veto`): 96 rows, 83 trd, 41W/42L,
+CF -$83.67, dBrier -0.0034. news WSV slice: 4 rows, 0W/4L, CF -$20.00. Settled 36 days after
+its end date (UMA lag). No rule change: n=1 in the daily-strike class.
