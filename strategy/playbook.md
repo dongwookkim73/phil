@@ -9891,3 +9891,18 @@ consensus on the same day. 6 live rows net dBrier -0.115 vs mid. No veto rows se
   709a2a078346 did.
 - **SI series now 0/3** (Fort Myers, Corpus Christi, Rock Hill SC f872100ff841 at 0.38 vs
   0.43, not said).
+
+## 2026-10-31 02:1xZ update: 10Y <4.95 Oct touch WSV row settled (FULL, RETRO-20261031-0210)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| 10Y yield dips below 4.95% in Oct (`4d474fb4d710`, WSV) | 0.23/0.14 | Yes | +0.04 (Yes @0.19, spread 0.10) | Yes | +21.32 |
+
+The veto cost $21.32 here, but the edge was only +0.04 at the ask, so the min_edge floor
+would have refused it anyway; the spread veto was not the binding gate. WSV tool totals
+(`core/counterfactual.py ledger --skip-reason wide-spread-veto`): 97 rows, 84 trd, 42W/42L,
+CF -$62.35, dBrier -0.0049; yes side 34 trd +$26.86, no side 50 trd -$89.21. rates-touch WSV
+slice 2 rows 1W/1L +$16.32. No rule change: n=2 in the slice, and the one win was below the
+edge floor. Note for the touch half-gap rule: the raw 0.33 would have scored better than
+the shaded 0.23 on this row (n=1, not actionable). AAA lower-tail est=mid rule now 4/4
+(de6437f72173, own trend model 0.70 vs mid 0.955, resolved Yes).
