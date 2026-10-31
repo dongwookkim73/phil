@@ -130,6 +130,16 @@ Rank every candidate by WHY the market should be wrong, strongest first:
    check asked only whether the pool's market id had a forecast. A sibling
    with an open forecast under ~6h old and no new fact means the new rung
    is recorded from that research, not re-researched.
+   **Implied-sibling supersede (RETRO-20261031-1410):** the converse also
+   binds. When a new forecast rests on a fact that implies a probability
+   >0.10 away from one of my OPEN rows on a logically linked market (rank
+   #1/#2, touch/close ladders, bracket neighbours, also across different
+   gamma events, which the event_id census cannot see), supersede that row
+   in the same tick from the same research. Evidence: Apple #1 Oct31 was
+   recorded at 0.63 (fd57d880b359) from a snapshot with Apple ahead of NVDA,
+   which implies P(Apple #2) ~0.37, while the Oct 22 Apple #2 row
+   fe7746ebd943 stayed live at 0.86 until settlement (No). A live row that
+   is no longer my belief corrupts calibration whichever way it settles.
    **Sibling-group census (DEEP-2026-08-22): the "question implies
    siblings" trigger is not enough — make the census standing.** Zero
    cross-market candidates entered the funnel between ~Aug 12 and Aug 22
