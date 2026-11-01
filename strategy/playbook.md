@@ -9916,3 +9916,29 @@ slice 2 rows 1W/1L +$16.32. No rule change: n=2 in the slice, and the one win wa
 edge floor. Note for the touch half-gap rule: the raw 0.33 would have scored better than
 the shaded 0.23 on this row (n=1, not actionable). AAA lower-tail est=mid rule now 4/4
 (de6437f72173, own trend model 0.70 vs mid 0.955, resolved Yes).
+
+## 2026-11-01 15:1xZ update: France downgrade OVV pair settled (FULL, RETRO-20261101-1510)
+
+Moody's closed its Oct 23 review with Aa3 / negative affirmed and took no action. S&P's
+next review (Nov 27) was outside the window, so the market resolved No.
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| Moody's/S&P downgrade France by Oct31 (`4520f94d9767`, OVV) | 0.50/0.735 | No | +0.20 (No @0.30) | No | +11.67 |
+| Moody's/S&P downgrade France by Oct31 (`35251dbcc470`, OVV) | 0.70/0.905 | No | +0.19 (No @0.11) | No | +40.45 |
+
+The veto cost $52.12 on one event (two correlated rows count as one event).
+OVV totals (`core/counterfactual.py ledger`): 280 rows, 272 fillable, 114W/158L, CF +$183.41,
+dBrier +0.0246.
+
+- **Scheduled rating-agency reviews: supersede only on agency-side information.**
+  Agency-side means a rating action, an agency statement or report, or a calendar change.
+  Press consensus ("cut widely expected", "largely priced in", yields at a 20-year high) is
+  already in the book. It is not a reason to move toward the mid. Keep the agency's revealed
+  preference on its last comparable review as the anchor (here, outlook-only on the same
+  fiscal story in Oct 2025) until the agency itself says something new. Evidence: 5458389.
+  The 0.50 row was superseded to 0.70 and then 0.85 on press items alone. Each supersede
+  raised absolute Brier (0.25 -> 0.49 -> 0.72), and the outcome went the way of the original
+  anchor. Against a mid that was also climbing, the rows scored -0.290, -0.329 and live -0.152. This rule restricts updates rather than
+  claiming edge, so it applies at n=1. Whether the OVV veto itself should yield for this
+  class is a deep-retro fork question, not an hourly one.
