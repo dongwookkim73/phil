@@ -4296,3 +4296,11 @@ There are no new hourly proposals since DEEP-10-10.
   The agent cannot edit forecasts.jsonl.
 - **Impact.** Small on this market (0.79 vs 0.78, both in headline). The
   silent double-count is the bug class to fix.
+- **Second instance, with a cost (2026-11-01 02:1xZ, RETRO-20261101-0210).**
+  Market 5167187 (Saudi strike on Yemen Oct 6) had two live Yes rows:
+  488609de0812 (10-03, 0.68) and dfd46d67ea74 (10-04, 0.72, WSV). The 10-05
+  `--supersede` e9b8fa882a88 (0.90) linked only `live[0]` = 488, so dfd stayed
+  live through settlement (Yes) and scored +0.062 dBrier in headline, nearly
+  cancelling the -0.058 of the row that was actually my belief. Same ask as
+  (a)-(b) above. Operator repair: mark dfd46d67ea74 `superseded_by:
+  e9b8fa882a88`.
