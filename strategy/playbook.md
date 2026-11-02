@@ -9942,3 +9942,15 @@ dBrier +0.0246.
   anchor. Against a mid that was also climbing, the rows scored -0.290, -0.329 and live -0.152. This rule restricts updates rather than
   claiming edge, so it applies at n=1. Whether the OVV veto itself should yield for this
   class is a deep-retro fork question, not an hourly one.
+
+## 2026-11-02 03:10Z update: Dubuque rally words + AAA $4.16 (FULL, RETRO-20261102-0310)
+
+- **Market-series rows: shrink first, then cap.** For `market-series(k/n)` or
+  `transcript-count(k/n)` with n < 10, compute `est = w*raw + (1-w)*mid` with `w = n/(n+20)`
+  (2026-10-17 rule). After that, the judgment-row cap (mid + 0.05) applies only if the
+  shrunk value is above it. Never record the cap value itself as the estimate. Evidence:
+  Dubuque Fentanyl/Deport `053416ee4f53` cited market-series(1/3), raw 0.33, and was recorded
+  at the cap, 0.22. The shrink gives 0.19. Not said: dBrier +0.020 instead of +0.008.
+- **Fentanyl/Deport series now 1/4** (said only at Corpus Christi; not said at GA, FL or
+  Dubuque). SI series 0/3.
+- AAA concentrated-book est=mid rule: 6/6 (`6cbe0279fc0e`, own model 0.15 vs mid 0.06, No).
