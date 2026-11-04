@@ -9975,3 +9975,13 @@ totals (`core/counterfactual.py ledger --skip-reason wide-spread-veto`): 102 row
   one campaign (n=1 on method), so it changes estimates only, not gates. Expect UMA lag of
   3-5 weeks on this series.
 - AAA concentrated-book est=mid rule: 7/7 (`c26575078396`, own trend 0.45 vs mid 0.925, Yes).
+
+## 2026-11-04 03:1xZ: draw-on-postponement clause, first contact (FULL, unsettled)
+
+- **Read the cancellation clause on soccer legs.** On the SPL markets I read, a game not started
+  by the deadline resolves the DRAW market Yes and the WIN legs No. Check this per market.
+- **A cluster of one league's draws at ~0.93 is an event, not a placeholder.** Haiku read 7 such
+  rows as data errors (divergence 0.62-0.73); the actual cause was the league postponing the whole
+  round that day (volume $449K on one leg). When sibling rows move together, search the fixture
+  before dismissing the price. Evidence: bets `97e5d839df53`, `6c0cbe021448`. Provisional until
+  those settle.
