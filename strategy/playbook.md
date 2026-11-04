@@ -9985,3 +9985,26 @@ totals (`core/counterfactual.py ledger --skip-reason wide-spread-veto`): 102 row
   round that day (volume $449K on one leg). When sibling rows move together, search the fixture
   before dismissing the price. Evidence: bets `97e5d839df53`, `6c0cbe021448`. Provisional until
   those settle.
+
+## 2026-11-04 15:10Z update: midterm D-target set, first settlements (FULL, RETRO-20261104-1510)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| TX Sen D (`48b1f823c8c8`, OVV) | 0.50/0.705 | No | +0.20 (No @0.30) | Yes | -5.00 |
+| OH Gov D (`a0debee4eea2`, OVV) | 0.60/0.795 | No | +0.19 (No @0.21) | Yes | -5.00 |
+| KS Sen D (`f9e28ea9bec5`, category-bar) | 0.44/0.525 | No | +0.08 (No @0.48) | Yes | -5.00 |
+| IA Gov D (`f55b8f48f94e`, category-bar) | 0.80/0.86 | No | +0.05 (No @0.15) | Yes | -5.00 |
+
+The gates saved $20.00 on one correlated read. OVV totals (`core/counterfactual.py ledger`): 282
+rows, 274 fillable, 114W/160L, CF +$173.41, dBrier +0.0254.
+
+- **US general elections: record the poll average with no directional shade from past-cycle
+  bias.** Polls understated D by 9.5 (TX), 3.9 (OH), 3.9 (KS) and 3.2 (IA), and my half-weight R
+  shade of 2 to 3.5 points went the other way. The sign of poll error does not carry between
+  cycles: 2020 and 2024 ran R, 2018 and 2022 ran D, and 2026 ran D. Widen the sd for that risk
+  instead of moving the mean. If the book sits above or below the poll read in every related race,
+  write that it is one correlated disagreement and shade toward the book. This changes estimates
+  only, not gates. Effective n=1 (one election), and live rows net dBrier +0.399. Alaska is still
+  open.
+- **A "no new poll found" note needs a same-day aggregator check.** Emerson's final Kansas poll
+  (Hamilton 49-45, PDF dated Oct 30 by file name) was missed by the Nov 1 re-read that held 0.44.
