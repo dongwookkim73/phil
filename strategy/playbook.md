@@ -9954,3 +9954,24 @@ dBrier +0.0246.
 - **Fentanyl/Deport series now 1/4** (said only at Corpus Christi; not said at GA, FL or
   Dubuque). SI series 0/3.
 - AAA concentrated-book est=mid rule: 6/6 (`6cbe0279fc0e`, own model 0.15 vs mid 0.06, No).
+
+## 2026-11-04 03:10Z update: Saudi-Yemen Oct 8/Oct 12 WSV rows settled (FULL, RETRO-20261104-0310)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| Saudi action vs Yemen Oct 12 (`8c8ac8c28eaa`, WSV) | 0.85/0.585 | Yes | +0.21 (Yes @0.64, spread 0.11) | Yes | +2.81 |
+| same, superseded (`4b2c84b44dbc`, WSV) | 0.80/0.57 | Yes | +0.14 (Yes @0.66, spread 0.18) | Yes | +2.58 |
+| Saudi action vs Yemen Oct 8 (`32c88a71ebd8`, WSV) | 0.90/0.54 | Yes | +0.06 (Yes @0.84, spread 0.60) | Yes | +0.95 |
+| same, superseded (`4e194e0b42dd`, WSV) | 0.82/0.43 | Yes | +0.06 (Yes @0.76, spread 0.66) | Yes | +1.58 |
+
+The veto cost little, and no row reached min_edge_wide_book 0.30 or was a final fact. WSV tool
+totals (`core/counterfactual.py ledger --skip-reason wide-spread-veto`): 102 rows, 89 trd,
+46W/43L, CF -$59.43, dBrier -0.0117; yes side 38 trd +$34.78, no side 51 trd -$94.21.
+
+- **Declared air campaigns: no attribution haircut for coalition-claimed strikes.** Daily
+  Saudi-action rows resolved Yes on all 6 dates recorded (Sep 23, Oct 5, 6, 8, 12, 23), on
+  coalition-attributed reporting, while my notes shaded for "Saudi armed forces directly".
+  While a declared campaign runs, record the persistence estimate without that shade. This is
+  one campaign (n=1 on method), so it changes estimates only, not gates. Expect UMA lag of
+  3-5 weeks on this series.
+- AAA concentrated-book est=mid rule: 7/7 (`c26575078396`, own trend 0.45 vs mid 0.925, Yes).
