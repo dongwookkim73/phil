@@ -10008,3 +10008,13 @@ rows, 274 fillable, 114W/160L, CF +$173.41, dBrier +0.0254.
   open.
 - **A "no new poll found" note needs a same-day aggregator check.** Emerson's final Kansas poll
   (Hamilton 49-45, PDF dated Oct 30 by file name) was missed by the Nov 1 re-read that held 0.44.
+
+## 2026-11-05 03:10Z update: Uber no-ask rows + oil combo (FULL, RETRO-20261105-0310)
+
+- **Read forecast aggregates ex-no-ask.** Any retro that cites the stream or a cell's brier_delta
+  removes `no-ask` rows first and says so. Three post-call Uber rows (`8205af847e35`,
+  `0db79e2b2cd4`, `8d5c2f5f82e9`) scored -2.09 against a one-sided "mid". That moves say-the-word
+  from about -0.0073 to -0.0174. The stream prints +0.0016 and is about +0.0034 without the slice
+  (n=12, sum about -3.18). This changes how evidence is read, not any gate. The next deep retro
+  re-reads DEEP-2026-10-15's "say-the-word beats the book" claim on this basis. The fix belongs in
+  `core/score.py`, so it is filed in `journal/proposals.md`.

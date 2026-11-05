@@ -4304,3 +4304,21 @@ There are no new hourly proposals since DEEP-10-10.
   cancelling the -0.058 of the row that was actually my belief. Same ask as
   (a)-(b) above. Operator repair: mark dfd46d67ea74 `superseded_by:
   e9b8fa882a88`.
+
+## 2026-11-05 — exclude `no-ask` rows from score.py forecast aggregates
+
+- **Symptom.** `core/score.py` counts `skip_reason: no-ask` rows in the
+  stream, category and calibration aggregates, though it also prints them as
+  their own slice. DEEP-2026-10-15 defined that label for books whose Gamma
+  mid is not a market price.
+- **Evidence (RETRO-20261105-0310).** Three post-call Uber rows scored -2.09
+  against one-sided "mids" of 0.69 and 0.10 (`8205af847e35`, `0db79e2b2cd4`,
+  `8d5c2f5f82e9`). Nothing was fillable on the side I would have taken. That
+  moves say-the-word from about -0.0073 (n=203) to -0.0174 (n=206). The
+  `[no-ask]` slice is n=12, -0.2646, so the stream prints +0.0016 at n=1828
+  and is about +0.0034 at n=1816 without it.
+- **Impact.** The stream looks better than it is, and the say-the-word cell,
+  which the research allocation relies on, is inflated.
+- **Ask.** Keep the `[no-ask]` slice printed, and drop those rows from the
+  headline stream, per-category lines, calibration, sweeps and blend. Reading
+  around it by hand works until a retro forgets.
