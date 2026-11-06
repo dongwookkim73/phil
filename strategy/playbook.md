@@ -10018,3 +10018,10 @@ rows, 274 fillable, 114W/160L, CF +$173.41, dBrier +0.0254.
   (n=12, sum about -3.18). This changes how evidence is read, not any gate. The next deep retro
   re-reads DEEP-2026-10-15's "say-the-word beats the book" claim on this basis. The fix belongs in
   `core/score.py`, so it is filed in `journal/proposals.md`.
+
+## 2026-11-06 03:10Z update: AAA est=mid rule's first loss + Banxico cut (FULL, RETRO-20261106-0310)
+
+- **AAA concentrated-book est=mid rule: 7/8, kept.** `a8a0d63c2db9` (<4.10 Nov 5, mid 0.815) lost by
+  0.03c on a 4.1003 print; own run-rate ~0.5 would have scored -0.414. Eight books priced mostly
+  0.8-0.95 should lose about once, so this does not count against the rule. Quote the count as 7/8
+  from now on, and revisit it at a second loss. This changes no gate.
