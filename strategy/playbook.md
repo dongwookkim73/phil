@@ -10025,3 +10025,11 @@ rows, 274 fillable, 114W/160L, CF +$173.41, dBrier +0.0254.
   0.03c on a 4.1003 print; own run-rate ~0.5 would have scored -0.414. Eight books priced mostly
   0.8-0.95 should lose about once, so this does not count against the rule. Quote the count as 7/8
   from now on, and revisit it at a second loss. This changes no gate.
+
+## 2026-11-06 15:10Z update: Astra Nov 5 rung (FULL, RETRO-20261106-1510)
+
+- **Release rung at the exact mid: `13b43f991bd7` 0.23, No, dBrier 0.000.** No rule change.
+- **Grading owed at 5997211 settlement.** Its book fell from 0.91/0.92 to 0.61/0.63 in a day with no
+  cause found. Grade `d753c09418a4` 0.70, `5ddc98eaf14c` 0.915 and `ff9c5d219146` 0.62 together. Say
+  whether the rung's day-before-deadline price carried information. Unsettled, so this changes no
+  gate.
