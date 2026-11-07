@@ -10033,3 +10033,29 @@ rows, 274 fillable, 114W/160L, CF +$173.41, dBrier +0.0254.
   cause found. Grade `d753c09418a4` 0.70, `5ddc98eaf14c` 0.915 and `ff9c5d219146` 0.62 together. Say
   whether the rung's day-before-deadline price carried information. Unsettled, so this changes no
   gate.
+
+## 2026-11-07 03:10Z update: Oct NFP, AAA Nov 6, UP Summit words, TikTok (FULL, RETRO-20261107-0310)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| AAA Nov 6 4.10-4.1099 (`4fe2b576dcd3`, WSV) | 0.03/0.49 | No | +0.07 (No @0.90, spread 0.79) | No | +0.56 |
+
+WSV tool totals (`core/counterfactual.py ledger --skip-reason wide-spread-veto`): 104 rows, 91 trd,
+48W/43L, CF -$57.38, dBrier -0.0148; yes side 38 trd +$34.78, no side 53 trd -$92.16.
+
+- **Placeholder mids flatter AAA ladder rows.** `4fe2b576dcd3` scored -0.239 and `92a7a9fc7668`
+  -0.111 against a mid near 0.49 on a 0.10/0.89 book. That is the same artifact as the no-ask rows
+  (RETRO-20261105-0310). Read tick and category nets excluding such rows: this tick's live net is
+  about +0.049 excluding it, not -0.19.
+- **Undated chart page: record at the mid (provisional, n=1).** TikTok Pro Events `6a7ce8736d7b` 0.78
+  vs mid 0.70 lost, +0.118, read from a chart page with no date. For app-store-rank rows, a rank is
+  evidence only when the page shows it is from the resolution date. This changes recording, no gate.
+- **UP Summit: n/(n+20) shrink kept.** Summed Brier raw 0.607, shrunk 0.592, mids 0.607, on one
+  scripted space-venue speech. n=5 rows, 1 event, so no venue-specific rule yet.
+- **AAA concentrated-book est=mid rule: 9/10.**
+- **Box-office tally (no tuning, floor frozen).** New rows `17d2379bd3f3`, `e920ce4f317a`,
+  `114f03b4caf2`, `adcf3d6ac5d9`, `0412278eb43b`; unsettled, so no floor tally. Two things to read at
+  settlement. Ramayana previews ran Wed + Thu, and the rules name Thursday only, so grade how The
+  Numbers' 3-day figure treated Wednesday. Deadline, THR, Gold Derby, Variety and IndieWire now
+  redirect automated fetches to a bot-access host. Do not follow it; press figures on those rows came
+  from search snippets and the Yahoo syndication, and the notes say so.
