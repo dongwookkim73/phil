@@ -10059,3 +10059,19 @@ WSV tool totals (`core/counterfactual.py ledger --skip-reason wide-spread-veto`)
   Numbers' 3-day figure treated Wednesday. Deadline, THR, Gold Derby, Variety and IndieWire now
   redirect automated fetches to a bot-access host. Do not follow it; press figures on those rows came
   from search snippets and the Yahoo syndication, and the notes say so.
+
+## 2026-11-08 00:25Z update: Bab el-Mandeb Oct 31 MA ladder (FULL, RETRO-20261108-0025)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| Mandeb Oct 31 MA 25-29 (`51a9833a3d96`, OVV) | 0.45/0.305 | Yes | +0.14 (Yes @0.31) | Yes | +11.13 |
+
+OVV totals (`core/counterfactual.py ledger --skip-reason outside-view-veto`): 284 rows, 276
+fillable, 116W/160L, CF +$187.23, dBrier +0.0245; countable-metric subclass 18 rows, CF +$142.08,
+dBrier -0.0776. The tool prints the countable-metric carve-out bar MET; the next deep retro
+checks the labels by hand (DEEP-2026-10-13/14 found MET prints to be labeller artefacts).
+
+- **PortWatch MA brackets: anchor on the regime mean, not the latest week.** The ladder settled
+  25-29, the regime-model mode (0.45 Oct 2, 0.44 Oct 6, book 0.30). Live net dBrier -0.182. The
+  one loser was the Oct 6 30-34 supersede (0.13 -> 0.24) that conditioned on the Oct 4 uptick
+  (MA 29.57), which reverted (+0.043). n=1 event, so this changes estimates only, no gate.
