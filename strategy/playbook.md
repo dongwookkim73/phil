@@ -10075,3 +10075,16 @@ checks the labels by hand (DEEP-2026-10-13/14 found MET prints to be labeller ar
   25-29, the regime-model mode (0.45 Oct 2, 0.44 Oct 6, book 0.30). Live net dBrier -0.182. The
   one loser was the Oct 6 30-34 supersede (0.13 -> 0.24) that conditioned on the Oct 4 uptick
   (MA 29.57), which reverted (+0.043). n=1 event, so this changes estimates only, no gate.
+
+## 2026-11-08 21:10Z update: SPL draw clause and white-voter tie clause (FULL, RETRO-20261108-2110)
+
+- **Draw-on-postponement clause: the resolver honoured it 3 of 3.** Abha-Shabab (bet
+  `97e5d839df53`, +0.38), Qadisiyah-Fayha and Kholood-Khaleej all settled Yes about 2h after the
+  Nov 7 11:59PM ET deadline, with no dispute hold. The 0.05-0.07 discount in the book was carry and
+  clause uncertainty, not reschedule risk. The 2026-11-04 section is no longer provisional on the
+  resolver question. It is one league decision (n=1 event), so the min_edge and event cap still
+  apply; Hazem-Nassr `6c0cbe021448` is still owed.
+- **Tie-break clauses: read the rules before the mid.** The white-voter pair (`205e85c7c377` 0.84
+  Yes, `2813e29667f3` 0.15 No) settled on the alphabetical tie clause over a 49-49 table, net dBrier
+  -0.061 vs mids. With the SPL set, clause reads beat thin-book mids in 2 of 2 events. This is an
+  observation only (n=2 events), not a gate.
