@@ -10088,3 +10088,16 @@ checks the labels by hand (DEEP-2026-10-13/14 found MET prints to be labeller ar
   Yes, `2813e29667f3` 0.15 No) settled on the alphabetical tie clause over a 49-49 table, net dBrier
   -0.061 vs mids. With the SPL set, clause reads beat thin-book mids in 2 of 2 events. This is an
   observation only (n=2 events), not a gate.
+
+## 2026-11-09 15:10Z update: SPL clause closed, China CPI TE dropped (FULL, RETRO-20261109-1510)
+
+- **Draw-on-postponement clause: 5 of 5.** Hazem-Nassr `6c0cbe021448` won +0.32 and Fateh-Riyadh
+  settled Yes; the win leg `28fd67639d00` settled No by rule. The pair closed +$0.70 on $10. Still
+  one league decision (n=1 event), so no gate change.
+- **China NBS CPI brackets: drop the TE calendar figure.** Supersedes the 2026-10-14 "average TE
+  with the base" rule. The book beat my rows on all three graded prints (Aug `19cf14c87979`, Sep
+  `fc10ca9ae3bb`, Oct `99f6db2be586`/`ea4f0e9f525e`, Oct net dBrier +0.058). Each time the TE
+  figure pulled my rows away from the book. In October the base-effect read (0.7-0.8) was right
+  and TE (0.9) was wrong. Rule: estimate from the seasonal-MoM base read alone, and record the mid
+  unless that read disagrees with the book by 0.10 or more. This tightens a claim of edge and
+  loosens no gate.
