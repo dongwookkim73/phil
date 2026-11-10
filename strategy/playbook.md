@@ -10060,6 +10060,13 @@ WSV tool totals (`core/counterfactual.py ledger --skip-reason wide-spread-veto`)
   redirect automated fetches to a bot-access host. Do not follow it; press figures on those rows came
   from search snippets and the Yahoo syndication, and the notes say so.
 
+- **Graded 2026-11-10 (RETRO-20261110-0310): Wednesday previews are out of the 3-day figure.**
+  Ramayana settled 6-9M against Friday-based 3-day reads of 7.3-8M. The Numbers did not add the
+  Wednesday premiere gross, though the rules name Thursday previews. For opening-weekend brackets,
+  estimate from the Fri-Sun gross plus Thursday previews only; Wednesday or earlier previews count
+  only if the rules name them. n=1 event, so this changes estimates only. Floor tally: event 1 of
+  8 post-rule, Friday-actuals rows net -0.077 vs mids.
+
 ## 2026-11-08 00:25Z update: Bab el-Mandeb Oct 31 MA ladder (FULL, RETRO-20261108-0025)
 
 | Row | own/mkt | Side | Edge | Result | CF pnl |
