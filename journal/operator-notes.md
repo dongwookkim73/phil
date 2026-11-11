@@ -1500,3 +1500,58 @@ To switch it on, the operator does the following:
 The public leaderboard ranks an agent after 30 settled non-BTC forecasts.
 Deep retros report the external Brier and calibration next to
 `brier_delta`. Issue #2 stays open until the key is added.
+
+## 2026-11-11 ~14:10Z - your large disagreements with tight books were mostly wrong (operator)
+
+Evidence for estimation and retros, not a cap. Your recorded est-prob stays
+your honest belief. The question is how much weight that belief deserves
+when it lands far from a tight market.
+
+Scope: forecasts recorded on this operator machine since 2026-10-16T02:00Z
+(the independent start), latest row per market and outcome (no
+`superseded_by`), settled won/lost by 2026-11-11T14:08Z, `skip_reason: no-ask`
+rows left out (7). "Tight" means both sides were quoted at record and
+best_ask - best_bid < 0.50. Brier delta is agent minus market
+(`market_prob_at_record`); negative is better.
+
+| slice | n | agent | market | delta | agent closer / market closer / tie |
+|---|---|---|---|---|---|
+| all | 125 | 0.1685 | 0.1719 | -0.0034 | 61 / 56 / 8 |
+| wide or one-sided book | 11 | 0.0670 | 0.2134 | -0.1464 | 9 / 2 / 0 |
+| tight book | 114 | 0.1783 | 0.1679 | +0.0103 | 52 / 54 / 8 |
+| tight, first half by settle time | 57 | 0.1921 | 0.1672 | +0.0250 | 20 / 34 / 3 |
+| tight, second half | 57 | 0.1644 | 0.1687 | -0.0043 | 32 / 20 / 5 |
+| tight, abs(est - mid) < 0.05 | 72 | 0.1605 | 0.1642 | -0.0037 | 35 / 29 / 8 |
+| tight, 0.05-0.10 | 20 | 0.2538 | 0.2710 | -0.0172 | 13 / 7 / 0 |
+| tight, 0.10-0.20 | 14 | 0.1320 | 0.0697 | +0.0623 | 2 / 12 / 0 |
+| tight, 0.20 or more | 8 | 0.2305 | 0.1157 | +0.1148 | 2 / 6 / 0 |
+
+What it shows:
+- On tight books, small disagreements paid: under 0.10 from the mid you were
+  closer 48 times to the market's 36 (92 rows). Large ones did not: 0.10 or
+  more from the mid, you were closer 4 times in 22. Both directions failed:
+  above the mid 2 of 12, below it 2 of 10.
+- Fitting est' = mid + w x (est - mid) on the 114 tight rows gives w = 0.03.
+  In sample, almost none of your distance from a tight mid carried
+  information. The wide-book result (-0.146 on 11 rows) is measured against
+  placeholder mids nobody could trade at. Don't read it as skill.
+- The vetoes already kept money out: 18 of the 22 carried outside-view-veto,
+  wide-spread-veto or category-bar. The cost landed in the forecast record,
+  which is what this experiment measures.
+- The 22 rows (* = you were closer): 9d375d09f493, 9191bcdded38,
+  49088f4eb78f, 88fe313db37a, 26354f06f8f0, 0dcb9ddc9d56, ab812f58cfaa,
+  45723ae90dbf, 0c4e89d2cdd4, 0d40f86d1027, b05cc9d0001c, dde067557ffe,
+  5f269944bdb1*, 4a86622e3569, 7b9ea7d8cc91, 9a47b094d4f5, a01bf6fe4e9d*,
+  a0debee4eea2, 48b1f823c8c8, 5a9e7cee5752, b0a5646148b7*, f96ac2f4fee6*.
+  Categories: say-the-word 5, commodities 3, politics-general 3,
+  social-media-postcount 2, video-views 2, awards 2, earnings-beat 2,
+  box-office 1, weather 1, soccer 1.
+
+Operator request: when a researched estimate lands 0.10 or more from a
+tight-book mid, name in the forecast note what you know that the book does
+not, such as a primary or official source, a measurement, or a resolution
+clause. If you can't name it, move the estimate toward the mid before you
+record it. How far is yours to decide under your evidence rules; the
+operator is not setting a number. Re-check this slice in retros as rows
+settle, and sharpen or drop the playbook rule if it stops holding. Caveats:
+22 rows, in sample, mixed categories.

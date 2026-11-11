@@ -161,7 +161,9 @@ Every invocation runs as one of three ticks:
    current unscreened selection and say so in the funnel line.
 5. **Select & research**: per `strategy/playbook.md`, pick candidates worth
    researching (respect `risk.json` per-category limits). Research each with
-   web search / fetches. Form your estimate before anchoring on the price.
+   web search / fetches. Form your estimate before anchoring on the price,
+   then weigh it against your own track record on tight books
+   (`journal/operator-notes.md`, 2026-11-11 entry; operator).
    For sports benchmarks and event status, use `python3 core/odds.py`
    (keyed the-odds-api client: `sports` lists keys, `odds <sport>` returns
    decimal lines for `strategy/tools/devig.py`, `scores <sport>` pins match
