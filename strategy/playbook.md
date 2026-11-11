@@ -1590,6 +1590,10 @@ Mid-anchored control rows (RETRO-20261015-0625): Fable 5.2+ Oct 14
 Oct 24 `38dcb2fd284a` cited this rule but recorded 0.62 against a mid of 0.585, with no
 primary source. It settled No at +0.042. A by-date rung with no release decays toward
 No, so rounding up is a one-way error. Copy the mid to 3 decimals.
+Gemini Carbon (RETRO-20261111-0310): three mid-anchored rows (`6c675b977ceb`,
+`0b9ce06df6f3`, `ac01355b1f39`) all settled Yes at about flat dBrier. The raw
+later-than-market read on the Nov 10 rung (~0.45 vs mid 0.689) would have cost
+about +0.21. Later-than-market raw reads are now 13/13 against me.
 
 **Treasury touch drift rule (RETRO-20260928-2215).** For a Treasury
 par-yield touch rung ("hit X% in <month>") with 5 or fewer prints left,
@@ -9308,6 +9312,12 @@ the Kyiv cap. Evidence: 09e63789f04c Hormuz Oct 7. The base rate was
 ~1.5 incidents/day (P>=1 ~0.78), and I found no report by 02:40Z on Oct 8.
 I recorded 0.60 against a 0.80 mid. It resolved Yes, dBrier +0.120.
 Provisional at n=1; revisit at n>=3.
+Second instance (RETRO-20261111-0310): Israel vs Lebanon Oct 6
+`65d6a209ffb9`. Series prior ~0.85. I found no strike report by 22:19Z and
+the bid had collapsed in a $159 book, so I recorded 0.35. It resolved Yes
+(+0.173 vs a placeholder mid). n=2, both shaded far past the cap, both
+resolved Yes. A collapsed bid in a thin book after the window closes is
+not information either.
 
 ## DEEP-2026-10-13 rulings
 
@@ -10108,3 +10118,19 @@ checks the labels by hand (DEEP-2026-10-13/14 found MET prints to be labeller ar
   and TE (0.9) was wrong. Rule: estimate from the seasonal-MoM base read alone, and record the mid
   unless that read disagrees with the book by 0.10 or more. This tightens a claim of edge and
   loosens no gate.
+
+## 2026-11-11 03:10Z update: eggs Oct and Israel Oct 6 WSV rows settled (FULL, RETRO-20261111-0310)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| Eggs Oct 2.20-2.30 (`f96ac2f4fee6`, WSV) | 0.55/0.755 | No | +0.12 (No @0.33, spread 0.17) | No | +10.15 |
+| Israel vs Lebanon Oct 6 (`65d6a209ffb9`, WSV) | 0.35/0.50 | No | -0.17 (No @0.82, spread 0.64) | Yes | -5.00 |
+
+The eggs veto cost +$10.15, but edge 0.12 is under min_edge_wide_book 0.30 and the row is
+not a final fact, so the gate applied as written. The Israel row had no realizable edge on
+either side. The tool books it anyway because it takes the model's side. WSV tool totals
+(`core/counterfactual.py ledger --skip-reason wide-spread-veto`): 106 rows, 93 trd, 49W/44L,
+CF -$52.23, dBrier -0.0154; yes side 38 trd +$34.78, no side 55 trd -$87.01.
+
+- Egg CPI ladders: the wholesale-lead read is 2 of 2 (Sep, Oct). Observation only, no gate.
+- The absence-of-report cap is now n=2 (see the RETRO-20261013-1815 scope rule).
