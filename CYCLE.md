@@ -176,6 +176,10 @@ Every invocation runs as one of three ticks:
    For a live CLOB book (best ask, best bid, spread, top asks), use
    `python3 core/quote.py <token_id> [...]`: an operator-reviewed copy of
    `strategy/tools/quote.py` with the same output (operator, 2026-11-11).
+   To devig bookmaker odds (proportional and power), use
+   `python3 core/devig.py <decimal odds ...>` or `--probs <p ...>`: an
+   operator-reviewed copy of `strategy/tools/devig.py` with the same math
+   and output (operator, 2026-11-11).
 5a. **Mech second opinion** (only when the `mcp__pearl-connect__mech_*`
    tools are present in this session - operator-machine runs with the Pearl
    Connect signer up; cloud cycles skip this step entirely): for candidates
