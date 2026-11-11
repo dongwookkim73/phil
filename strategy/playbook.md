@@ -10134,3 +10134,17 @@ CF -$52.23, dBrier -0.0154; yes side 38 trd +$34.78, no side 55 trd -$87.01.
 
 - Egg CPI ladders: the wholesale-lead read is 2 of 2 (Sep, Oct). Observation only, no gate.
 - The absence-of-report cap is now n=2 (see the RETRO-20261013-1815 scope rule).
+
+## 2026-11-11 15:10Z update: named-speaker attendance check (FULL, RETRO-20261111-1510)
+
+- **Say-the-word with a named speaker at a scheduled session** (PMQs, pressers, named
+  earnings-call executives): before recording, check who took the speaker's last 2 sessions
+  and whether any travel is announced. If a stand-in appeared recently, the estimate is
+  P(attends) x P(word | attends), never P(word | attends) alone. Evidence: Burnham "NHS"
+  `29d9cb1c84fd` 0.88 vs mid 0.22, settled No, dBrier +0.726. Louise Haigh had stood in at
+  PMQs the week before (Spectator AU Nov 5), and I never checked.
+- **Operator note 2026-11-11 (large disagreement with a both-sided book):** a forecast note
+  0.10+ from a both-sided mid names the fact the book lacks (primary source, measurement, or
+  clause). If it can't, record closer to the mid. This applies to "wide-spread" books too
+  (spread < 0.50), not only to books under max_spread. The Burnham row is that slice's 23rd
+  row, and the market was closer.
