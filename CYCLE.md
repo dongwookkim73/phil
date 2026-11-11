@@ -173,6 +173,9 @@ Every invocation runs as one of three ticks:
    are cached and free, but budget the rest — roughly 10-12 credits/day
    across all cycles. If it reports the key missing or the budget exhausted,
    log that and skip; never scrape around it.
+   For a live CLOB book (best ask, best bid, spread, top asks), use
+   `python3 core/quote.py <token_id> [...]`: an operator-reviewed copy of
+   `strategy/tools/quote.py` with the same output (operator, 2026-11-11).
 5a. **Mech second opinion** (only when the `mcp__pearl-connect__mech_*`
    tools are present in this session - operator-machine runs with the Pearl
    Connect signer up; cloud cycles skip this step entirely): for candidates
