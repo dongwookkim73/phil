@@ -10168,3 +10168,12 @@ fillable, 118W/160L, CF +$248.31, dBrier +0.0219; ai-model-release 36 rows CF +$
   superseded OVV row scored -0.302. Release-rung count now 13/14 (see the pre-record check). No gate
   change: the positive CF is still concentrated in one family (Astra).
 - **AAA concentrated-book est=mid rule: 10/11** (`a788051ebb5f`, raw 0.55 vs mid 0.905, Yes).
+
+## 2026-11-17 15:10Z update: HD line-above-consensus pair lost (FULL, RETRO-20261117-1510)
+
+- **Earnings-beat, line above consensus: est <= mid** unless the note quotes the issuer's median
+  beat SIZE over its last 8 prints and that size >= the gap (line minus consensus top). Evidence:
+  HD > 3.95 vs consensus 3.80-3.86, print 3.86. `0a8d7267b789` 0.48 vs mid 0.44 priced the line
+  as if it sat at consensus, and `afb80e18f6c2` 0.35 vs mid 0.305 was still above mid. Both lost.
+  earnings-beat forecasts n=7, brier_delta +0.0655, and every miss was optimistic (SCHW, TW x2,
+  HD x2). This narrows an edge claim, so it applies at small n.
