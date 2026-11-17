@@ -1594,6 +1594,11 @@ Gemini Carbon (RETRO-20261111-0310): three mid-anchored rows (`6c675b977ceb`,
 `0b9ce06df6f3`, `ac01355b1f39`) all settled Yes at about flat dBrier. The raw
 later-than-market read on the Nov 10 rung (~0.45 vs mid 0.689) would have cost
 about +0.21. Later-than-market raw reads are now 13/13 against me.
+Astra 6.1+ Nov 15 (RETRO-20261116-2310): raw ~0.45 vs book 0.89 settled No, the
+first raw read to beat the mid, so the count is **13/14**. That raw read rested on
+a SOURCED cancellation (WSJ: Oct release scrapped), not on "not seen yet".
+Observation only (n=1): put such a raw read and its source in the note; est_prob
+still follows this rule until 3 sourced-delay rows settle.
 
 **Treasury touch drift rule (RETRO-20260928-2215).** For a Treasury
 par-yield touch rung ("hit X% in <month>") with 5 or fewer prints left,
@@ -10148,3 +10153,18 @@ CF -$52.23, dBrier -0.0154; yes side 38 trd +$34.78, no side 55 trd -$87.01.
   clause). If it can't, record closer to the mid. This applies to "wide-spread" books too
   (spread < 0.50), not only to books under max_spread. The Burnham row is that slice's 23rd
   row, and the market was closer.
+
+## 2026-11-16 23:10Z update: Astra Nov 15 rung graded, AAA 10/11 (FULL, RETRO-20261116-2310)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| Astra 6.1+ by Nov 15 (`d753c09418a4`, OVV) | 0.70/0.89 | No | +0.18 (No @0.12) | No | +36.67 |
+
+OVV totals (`core/counterfactual.py ledger --skip-reason outside-view-veto`): 286 rows, 278
+fillable, 118W/160L, CF +$248.31, dBrier +0.0219; ai-model-release 36 rows CF +$99.22.
+
+- **Astra rung: the price drop was late information, not noise.** 0.915 -> 0.62 nine days out moved
+  the right way, but no release came. Mid rows `5ddc98eaf14c`/`ff9c5d219146` were flat; the
+  superseded OVV row scored -0.302. Release-rung count now 13/14 (see the pre-record check). No gate
+  change: the positive CF is still concentrated in one family (Astra).
+- **AAA concentrated-book est=mid rule: 10/11** (`a788051ebb5f`, raw 0.55 vs mid 0.905, Yes).
