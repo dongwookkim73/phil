@@ -10177,3 +10177,20 @@ fillable, 118W/160L, CF +$248.31, dBrier +0.0219; ai-model-release 36 rows CF +$
   as if it sat at consensus, and `afb80e18f6c2` 0.35 vs mid 0.305 was still above mid. Both lost.
   earnings-beat forecasts n=7, brier_delta +0.0655, and every miss was optimistic (SCHW, TW x2,
   HD x2). This narrows an edge claim, so it applies at small n.
+
+## 2026-11-18 15:10Z update: PMQs named-word cap, AK sweep OVV (FULL, RETRO-20261118-1510)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| AK D sweep Sen + Gov (`0e600579de9f`, OVV) | 0.50/0.71 | No | +0.20 (No @0.30) | Yes | -5.00 |
+
+OVV totals (`core/counterfactual.py ledger --skip-reason outside-view-veto`): 287 rows, 279
+fillable, 118W/161L, CF +$243.31, dBrier +0.0224; politics-general 41 rows CF +$69.35.
+
+- **PMQs named-word rows: est <= mid + 0.05** unless the note cites a count from Hansard or
+  transcripts of that PM's own recent PMQs, applied after the attendance check (2026-11-11 rule).
+  Evidence: Burnham "NHS" 0/2 (`29d9cb1c84fd` 0.88, `5f980d6743b7` 0.66, both No; dBrier
+  +0.726/+0.139). P(word | attends) came from a persona prior ("ex-Health Sec"), not a count. This
+  narrows an edge claim, so it applies at n=2.
+- **Midterm D-target set closed:** all 7 legs settled D, so the half-weight R polling shade was wrong
+  7/7. The gates saved $25. No new rule beyond RETRO-20261104-1510.
