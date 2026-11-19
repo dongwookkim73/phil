@@ -10194,3 +10194,18 @@ fillable, 118W/161L, CF +$243.31, dBrier +0.0224; politics-general 41 rows CF +$
   narrows an edge claim, so it applies at n=2.
 - **Midterm D-target set closed:** all 7 legs settled D, so the half-weight R polling shade was wrong
   7/7. The gates saved $25. No new rule beyond RETRO-20261104-1510.
+
+## 2026-11-19 03:10Z update: earnings-call-mention recency cap (FULL, RETRO-20261119-0310)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| PANW "Quantum" Q1 FY27 call (`bb3962e4dac9`, OVV) | 0.52/0.355 | Yes | +0.15 (Yes @0.37) | No | -5.00 |
+
+OVV totals (`core/counterfactual.py ledger --skip-reason outside-view-veto`): 288 rows, 280
+fillable, 118W/162L, CF +$238.31, dBrier +0.0229; earnings-call-mention 1 row CF -$5.00.
+
+- **Earnings-call-mention, with the latest two calls unread: est <= mid + 0.05.** Hits on older
+  calls are not a base rate while the recent calls are unread, and silence in search excerpts
+  points toward a faded topic. Evidence: PANW "Quantum" got 2/2 from the Nov 2025 and Feb 2026
+  calls, but the Jun and Sep 2026 transcripts returned 403; settled No, dBrier +0.144. This is the
+  same shape as the PMQs cap above. It narrows an edge claim, so it applies at n=1.
