@@ -10209,3 +10209,13 @@ fillable, 118W/162L, CF +$238.31, dBrier +0.0229; earnings-call-mention 1 row CF
   points toward a faded topic. Evidence: PANW "Quantum" got 2/2 from the Nov 2025 and Feb 2026
   calls, but the Jun and Sep 2026 transcripts returned 403; settled No, dBrier +0.144. This is the
   same shape as the PMQs cap above. It narrows an edge claim, so it applies at n=1.
+
+## 2026-11-20 03:10Z update: sourced-schedule events at mid (FULL, RETRO-20261120-0310)
+
+- **Scheduled corporate listings and events with a sourced date: est = mid unless the note names
+  a concrete slip fact** (a postponement report, a pulled roadshow, a market halt). A generic
+  slip haircut ("valuation pushback", "unconfirmed by the company", "risk-off tape") is not a
+  fact the book lacks. Evidence: Anthropic IPO (priced Nov 18, first trade Nov 19, the
+  CNBC-sourced timetable) had 5 of 6 rows 0.035-0.05 under the book with generic haircuts; live
+  rows net dBrier +0.030. The one row that beat the book (`5eb7daec0ea1`) was recorded on the
+  fresh roadshow/date fact. This narrows a deviation from the book, so it applies at n=1 event.
