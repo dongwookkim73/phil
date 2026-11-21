@@ -10236,5 +10236,9 @@ fillable, 118W/163L, CF +$233.31, dBrier +0.0232; news 11 rows CF -$28.35.
   because the same cadence read keeps costing Brier there. Evidence: UFO files 0/2
   (`d8892ff1a36a`, `8cbf50aecd7f`: 0.62 vs 0.85, resolved Yes 12h later, dBrier +0.122). The
   bar's five losing bets share the shape, and news forecasts are n=68, brier_delta +0.027.
+  RETRO-20261121-1515 addendum: an actor's stated goal or pledge ("wants 100% completion") is
+  not a dated No fact. For "finish/complete by" markets, quote the resolution rule's definition
+  of finish in the note before going under mid. Evidence: Kai Cenat GTA VI `b955c3b1aa24` 0.04
+  vs mid 0.0515 on the 100% pledge, resolved Yes 2.5 days after launch.
 - **Fallback-clause reads confirmed 2/2** (CPI Oct headline 3.7 / core 2.6 resolved on the Sep
   print once BLS skipped the 12-month change). No new rule.
