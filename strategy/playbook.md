@@ -10219,3 +10219,22 @@ fillable, 118W/162L, CF +$238.31, dBrier +0.0229; earnings-call-mention 1 row CF
   CNBC-sourced timetable) had 5 of 6 rows 0.035-0.05 under the book with generic haircuts; live
   rows net dBrier +0.030. The one row that beat the book (`5eb7daec0ea1`) was recorded on the
   fresh roadshow/date fact. This narrows a deviation from the book, so it applies at n=1 event.
+
+## 2026-11-21 03:10Z update: process-shape estimates near mid (FULL, RETRO-20261121-0310)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| UFO files by Nov 30 (`8cbf50aecd7f`, OVV) | 0.62/0.85 | No | +0.22 (No @0.16) | Yes | -5.00 |
+
+OVV totals (`core/counterfactual.py ledger --skip-reason outside-view-veto`): 289 rows, 281
+fillable, 118W/163L, CF +$233.31, dBrier +0.0232; news 11 rows CF -$28.35.
+
+- **Process-shape rows (the process-shape-bar's three conditions): est >= mid - 0.05 unless the
+  note names a dated No fact** (the bar's own exception: the actor says not before the deadline,
+  or a scheduled date falls after it). "No release found in N searches" and cadence gaps leave
+  the estimate at the book. The bar already blocks the bet. This extends it to the forecast,
+  because the same cadence read keeps costing Brier there. Evidence: UFO files 0/2
+  (`d8892ff1a36a`, `8cbf50aecd7f`: 0.62 vs 0.85, resolved Yes 12h later, dBrier +0.122). The
+  bar's five losing bets share the shape, and news forecasts are n=68, brier_delta +0.027.
+- **Fallback-clause reads confirmed 2/2** (CPI Oct headline 3.7 / core 2.6 resolved on the Sep
+  print once BLS skipped the 12-month change). No new rule.
