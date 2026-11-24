@@ -10082,6 +10082,16 @@ WSV tool totals (`core/counterfactual.py ledger --skip-reason wide-spread-veto`)
   only if the rules name them. n=1 event, so this changes estimates only. Floor tally: event 1 of
   8 post-rule, Friday-actuals rows net -0.077 vs mids.
 
+- **Graded 2026-11-24 (RETRO-20261124-0310): my own comp multiples don't go below the press.**
+  Hunger Games: Sunrise on the Reaping OW landed 115-120M. That is at or above the top press figure
+  (Deadline ~110M+, BOT 114M, GoldDerby 115M). My four rows (`2445cf9adc7e`, `d8f70b0f3ab3`,
+  `5a2530d2fda2`, `5da30ea77bc2`) all sat below the book and net +0.578 vs mids. On Friday I had
+  centred at ~108M from frontloaded-YA multiples (Twilight 1.93-1.96x -> ~100M), below every press
+  figure. Rule: a centre I build from my own Fri-multiple comps is floored at the lowest press
+  figure on file. The press-centre rule's "lowest credible" means the lowest PRESS figure, not my
+  comp. Floor did not trigger (no bracket mid >= 0.55). Floor tally: event 2 of 8 post-rule,
+  Friday-actuals rows net +0.303 vs mids.
+
 ## 2026-11-08 00:25Z update: Bab el-Mandeb Oct 31 MA ladder (FULL, RETRO-20261108-0025)
 
 | Row | own/mkt | Side | Edge | Result | CF pnl |
