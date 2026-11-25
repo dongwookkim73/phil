@@ -10252,3 +10252,22 @@ fillable, 118W/163L, CF +$233.31, dBrier +0.0232; news 11 rows CF -$28.35.
   vs mid 0.0515 on the 100% pledge, resolved Yes 2.5 days after launch.
 - **Fallback-clause reads confirmed 2/2** (CPI Oct headline 3.7 / core 2.6 resolved on the Sep
   print once BLS skipped the 12-month change). No new rule.
+
+## 2026-11-25 03:10Z update: say-the-word current-riff floor (FULL, RETRO-20261125-0310)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| Turkey pardon "Drone"/"Helipad" (`064aac07badf`, OVV) | 0.55/0.735 | No | +0.12 (No @0.33) | Yes | -5.00 |
+| Turkey pardon "Ballroom" (`2d36564c9ebb`, OVV) | 0.50/0.675 | No | +0.17 (No @0.33) | Yes | -5.00 |
+
+OVV totals (`core/counterfactual.py ledger --skip-reason outside-view-veto`): 291 rows, 283
+fillable, 118W/165L, CF +$223.31, dBrier +0.0240; say-the-word 32 rows CF -$22.99.
+
+- **Say-the-word on a speaker's current recurring riff: est >= mid - 0.05** unless the note
+  cites the resolved same-word market series (method note 1, DEEP-2026-10-06) or at least 3
+  transcripts of that speaker from the last ~3 months. A single prior-year transcript of the
+  same ceremony does not count when the riff postdates it. Evidence: in the 2026 turkey pardon,
+  Ballroom and Drone/Helipad were both shaded about 0.18 under the book on the 2025 transcript.
+  Both resolved Yes, for a combined dBrier of +0.276. The Chicken/Egg row, recorded at the mid,
+  also won. This is the same shape as the PMQs and earnings-call caps. It narrows an edge claim,
+  so it applies at n=2.
