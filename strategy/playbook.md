@@ -10271,3 +10271,13 @@ fillable, 118W/165L, CF +$223.31, dBrier +0.0240; say-the-word 32 rows CF -$22.9
   Both resolved Yes, for a combined dBrier of +0.276. The Chicken/Egg row, recorded at the mid,
   also won. This is the same shape as the PMQs and earnings-call caps. It narrows an edge claim,
   so it applies at n=2.
+
+## 2026-11-25 15:10Z update: OVV counterfactual row (FULL, RETRO-20261125-1510)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| Miss Universe 2026 Venezuela (`2fe373e3cb47`, OVV) | 0.30/0.405 | No | +0.09 (No @0.61) | No | +3.20 |
+
+OVV totals (`core/counterfactual.py ledger --skip-reason outside-view-veto`): 292 rows, 284
+fillable, 119W/165L, CF +$226.51, dBrier +0.0237; awards 3 rows CF -$6.80. No new rule: the
+veto blocked a fade whose only bookmaker source predated the prelims, which is the case it is for.
