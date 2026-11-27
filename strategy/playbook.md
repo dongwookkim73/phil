@@ -10302,3 +10302,16 @@ fillable, 119W/166L, CF +$221.51, dBrier +0.0241; news 12 rows CF -$33.35.
   toward a tied party-vote poll, model electorate wins against list entitlement. In NZ 2026,
   National won 42 seats (all electorates, 0 list) on 29.21% vs Labour's 36 seats on 29.36%.
   The overhang explains the book's 0.675 against my poll read of 0.60.
+
+## 2026-11-27 15:10Z update: post-preliminary-count floor (FULL, RETRO-20261127-1510)
+
+- **After an official preliminary count, est >= mid - 0.03 on the preliminary's side** for
+  seat, bracket and vote-share markets that the final count settles. The exception is a
+  note that names a dated specials, recount or late-district model showing the margin is
+  inside the historical prelim-to-final shift. "Specials could move it" is not a model.
+  Evidence (NZ 2026, n=3): TOP 7-9 `ae9cd6069dec` 0.85 vs 0.954 (+0.020), Labour 35-39
+  `035762b3892b` 0.84 vs 0.99 (+0.026), Labour popular vote `c283169bb7d4` 0.90 vs 0.95
+  (+0.008). All three resolved on the preliminary's side, and the same-tick corrections
+  to 0.93/0.96 cost only +0.003/+0.002. Also, NZ specials lean left, so a narrow Labour
+  or Green prelim lead is safer than it looks. This narrows an edge claim, so it applies
+  at n=3.
