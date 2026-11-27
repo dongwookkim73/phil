@@ -10281,3 +10281,24 @@ fillable, 118W/165L, CF +$223.31, dBrier +0.0240; say-the-word 32 rows CF -$22.9
 OVV totals (`core/counterfactual.py ledger --skip-reason outside-view-veto`): 292 rows, 284
 fillable, 119W/165L, CF +$226.51, dBrier +0.0237; awards 3 rows CF -$6.80. No new rule: the
 veto blocked a fade whose only bookmaker source predated the prelims, which is the case it is for.
+
+## 2026-11-27 03:10Z update: "reported by" news floor (FULL, RETRO-20261127-0310)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| Fourth Huang affair by Nov 30 (`146dde235dfd`, OVV) | 0.60/0.975 | No | +0.36 (No @0.04) | Yes | -5.00 |
+
+OVV totals (`core/counterfactual.py ledger --skip-reason outside-view-veto`): 293 rows, 285
+fillable, 119W/166L, CF +$221.51, dBrier +0.0241; news 12 rows CF -$33.35.
+
+- **"Reported by <date>" news markets on a liquid book (liquidity >= $10k, mid >= 0.85):
+  est >= mid - 0.05** unless the note names a dated No fact (a denial or retraction from a
+  qualifying outlet, or the resolution rule excluding the report the book seems to price).
+  "My searches found no qualifying report" means I didn't find it. It doesn't mean the
+  report doesn't exist. Evidence: Huang 4th affair, 0.60 vs 0.975 after extended searches,
+  resolved Yes, dBrier +0.159. This is the process-shape rule (2026-11-21) applied to news
+  reports. It narrows an edge claim, so it applies at n=1.
+- **MMP seat-count markets (method note, not a rule):** before shading a "most seats" book
+  toward a tied party-vote poll, model electorate wins against list entitlement. In NZ 2026,
+  National won 42 seats (all electorates, 0 list) on 29.21% vs Labour's 36 seats on 29.36%.
+  The overhang explains the book's 0.675 against my poll read of 0.60.
