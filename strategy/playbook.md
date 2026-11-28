@@ -10315,3 +10315,17 @@ fillable, 119W/166L, CF +$221.51, dBrier +0.0241; news 12 rows CF -$33.35.
   to 0.93/0.96 cost only +0.003/+0.002. Also, NZ specials lean left, so a narrow Labour
   or Green prelim lead is safer than it looks. This narrows an edge claim, so it applies
   at n=3.
+
+## 2026-11-28 03:10Z update: hung-council mayor fades need a dated veto (FULL, RETRO-20261128-0310)
+
+- **In a hung-council mayor or PM market, a fade of the plurality party's candidate more
+  than 0.05 under the mid needs a dated, named statement against that candidate from a
+  party the coalition math needs.** "The other parties together outnumber it" is
+  arithmetic, not evidence: kingmakers deal with the plurality party all the time. With
+  no such statement, est >= mid - 0.05.
+  Evidence (SA local 2026, n=2): eThekwini Phakathi (MK 40% PR, 73/112 wards) row
+  `6ba4e0f9368a` 0.40 vs mid 0.6575 came from DA+ANC+IFP bloc arithmetic alone. It
+  resolved Yes, +0.243. Johannesburg Zille (DA 34.8%) row `4f49fb40acaa` 0.48 vs 0.545
+  rested on Mashaba's dated "very, very slim unless Zille goes" (Daily Maverick, Nov 8).
+  It resolved No, -0.067. The fade with a named veto worked and the arithmetic fade did
+  not. This narrows an edge claim, so it applies at n=2.
